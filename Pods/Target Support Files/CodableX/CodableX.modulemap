@@ -1,0 +1,6 @@
+framework module CodableX {
+  umbrella header "CodableX-umbrella.h"
+
+  export *
+  module * { export * }
+}

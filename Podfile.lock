@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.7.1)
+  - CodableX (0.2.0)
+  - Kingfisher (7.9.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - CodableX
+  - Kingfisher (~> 7.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CodableX
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  CodableX: add15a2828c60b0963716b64551b70cd51c461ca
+  Kingfisher: 59f908b6d2f403b0a3e539debb0eec05cb27002c
+
+PODFILE CHECKSUM: f4ea9b2df4681227999b3a298b328b72e42e7be5
+
+COCOAPODS: 1.12.1

@@ -11,14 +11,22 @@
 		69FA32D12AB0B42700F31AFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA32D02AB0B42700F31AFC /* ContentView.swift */; };
 		69FA32D32AB0B42900F31AFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FA32D22AB0B42900F31AFC /* Assets.xcassets */; };
 		69FA32D62AB0B42900F31AFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69FA32D52AB0B42900F31AFC /* Preview Assets.xcassets */; };
+		69FA32E62AB1B13200F31AFC /* MovieResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA32E52AB1B13200F31AFC /* MovieResponseModel.swift */; };
+		69FA32E82AB1B16800F31AFC /* MovieListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FA32E72AB1B16800F31AFC /* MovieListResponseModel.swift */; };
+		7A8A7A252D6FDF2F52547264 /* Pods_ReelQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0E5DD6D3013C92AC9F8D5D /* Pods_ReelQuest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23CE477B88D213F914287C59 /* Pods-ReelQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReelQuest.debug.xcconfig"; path = "Target Support Files/Pods-ReelQuest/Pods-ReelQuest.debug.xcconfig"; sourceTree = "<group>"; };
 		69FA32CB2AB0B42700F31AFC /* ReelQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReelQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69FA32CE2AB0B42700F31AFC /* ReelQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelQuestApp.swift; sourceTree = "<group>"; };
 		69FA32D02AB0B42700F31AFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		69FA32D22AB0B42900F31AFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69FA32D52AB0B42900F31AFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69FA32E52AB1B13200F31AFC /* MovieResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieResponseModel.swift; sourceTree = "<group>"; };
+		69FA32E72AB1B16800F31AFC /* MovieListResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponseModel.swift; sourceTree = "<group>"; };
+		9D49DE5CB634E921BC0C633C /* Pods-ReelQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReelQuest.release.xcconfig"; path = "Target Support Files/Pods-ReelQuest/Pods-ReelQuest.release.xcconfig"; sourceTree = "<group>"; };
+		AE0E5DD6D3013C92AC9F8D5D /* Pods_ReelQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReelQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,19 +34,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A8A7A252D6FDF2F52547264 /* Pods_ReelQuest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AA9FB45CD0B710225CC0C77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23CE477B88D213F914287C59 /* Pods-ReelQuest.debug.xcconfig */,
+				9D49DE5CB634E921BC0C633C /* Pods-ReelQuest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		69FA32C22AB0B42700F31AFC = {
 			isa = PBXGroup;
 			children = (
 				69FA32CD2AB0B42700F31AFC /* ReelQuest */,
 				69FA32CC2AB0B42700F31AFC /* Products */,
+				2AA9FB45CD0B710225CC0C77 /* Pods */,
+				ED1A6A0229043F1EFC6BD754 /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		69FA32CC2AB0B42700F31AFC /* Products */ = {
 			isa = PBXGroup;
@@ -51,8 +73,9 @@
 		69FA32CD2AB0B42700F31AFC /* ReelQuest */ = {
 			isa = PBXGroup;
 			children = (
-				69FA32CE2AB0B42700F31AFC /* ReelQuestApp.swift */,
-				69FA32D02AB0B42700F31AFC /* ContentView.swift */,
+				69FA32DE2AB0BB5300F31AFC /* FeatureA */,
+				69FA32DD2AB0B8B700F31AFC /* Core */,
+				69FA32DC2AB0B87600F31AFC /* Apps */,
 				69FA32D22AB0B42900F31AFC /* Assets.xcassets */,
 				69FA32D42AB0B42900F31AFC /* Preview Content */,
 			);
@@ -67,6 +90,95 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		69FA32DC2AB0B87600F31AFC /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				69FA32D02AB0B42700F31AFC /* ContentView.swift */,
+				69FA32CE2AB0B42700F31AFC /* ReelQuestApp.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		69FA32DD2AB0B8B700F31AFC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				69FA32EB2AB2E33D00F31AFC /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		69FA32DE2AB0BB5300F31AFC /* FeatureA */ = {
+			isa = PBXGroup;
+			children = (
+				69FA32DF2AB0BB6300F31AFC /* Presentation */,
+				69FA32E12AB0BB7C00F31AFC /* Data */,
+				69FA32E02AB0BB7300F31AFC /* Domain */,
+			);
+			path = FeatureA;
+			sourceTree = "<group>";
+		};
+		69FA32DF2AB0BB6300F31AFC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		69FA32E02AB0BB7300F31AFC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		69FA32E12AB0BB7C00F31AFC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				69FA32E42AB0BBB900F31AFC /* Datasources */,
+				69FA32E32AB0BBAC00F31AFC /* Repositories */,
+				69FA32E22AB0BBA100F31AFC /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		69FA32E22AB0BBA100F31AFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69FA32E52AB1B13200F31AFC /* MovieResponseModel.swift */,
+				69FA32E72AB1B16800F31AFC /* MovieListResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		69FA32E32AB0BBAC00F31AFC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		69FA32E42AB0BBB900F31AFC /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		69FA32EB2AB2E33D00F31AFC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ED1A6A0229043F1EFC6BD754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE0E5DD6D3013C92AC9F8D5D /* Pods_ReelQuest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69FA32D92AB0B42900F31AFC /* Build configuration list for PBXNativeTarget "ReelQuest" */;
 			buildPhases = (
+				D589BEEF8E40DC3DE5B5DDDD /* [CP] Check Pods Manifest.lock */,
 				69FA32C72AB0B42700F31AFC /* Sources */,
 				69FA32C82AB0B42700F31AFC /* Frameworks */,
 				69FA32C92AB0B42700F31AFC /* Resources */,
+				E08615F3CB012881EFB0182E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +246,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D589BEEF8E40DC3DE5B5DDDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReelQuest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E08615F3CB012881EFB0182E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReelQuest/Pods-ReelQuest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReelQuest/Pods-ReelQuest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReelQuest/Pods-ReelQuest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69FA32C72AB0B42700F31AFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69FA32E62AB1B13200F31AFC /* MovieResponseModel.swift in Sources */,
 				69FA32D12AB0B42700F31AFC /* ContentView.swift in Sources */,
 				69FA32CF2AB0B42700F31AFC /* ReelQuestApp.swift in Sources */,
+				69FA32E82AB1B16800F31AFC /* MovieListResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +419,7 @@
 		};
 		69FA32DA2AB0B42900F31AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23CE477B88D213F914287C59 /* Pods-ReelQuest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +449,7 @@
 		};
 		69FA32DB2AB0B42900F31AFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D49DE5CB634E921BC0C633C /* Pods-ReelQuest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
